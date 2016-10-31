@@ -1,0 +1,57 @@
+{
+    "name": "kendo-pack-fonts",
+    "version": "0.5.0",
+    "description": "Utility for packing fonts into inline style declarations",
+    "main": "index.js",
+    "scripts": {
+        "test": "gulp test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/telerik/kendo-pack-fonts.git"
+    },
+    "keywords": [
+        "kendo",
+        "ttf",
+        "woff",
+        "font",
+        "pack",
+        "pdf",
+        "export",
+        "embed"
+    ],
+    "author": "Telerik",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/telerik/kendo-pack-fonts/issues"
+    },
+    "homepage": "https://github.com/telerik/kendo-pack-fonts#readme",
+    "devDependencies": {
+        "cz-conventional-changelog": "1.2.0",
+        "ghooks": "1.3.2",
+        "validate-commit-msg": "2.8.2"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        },
+        "ghooks": {
+            "commit-msg": "validate-commit-msg"
+        },
+        "validate-commit-msg": {
+            "types": [
+                "feat",
+                "fix",
+                "docs",
+                "style",
+                "refactor",
+                "perf",
+                "test",
+                "chore",
+                "revert"
+            ],
+            "warnOnFail": false,
+            "maxSubjectLength": 100
+        }
+    }
+}
