@@ -77,5 +77,3 @@ This approach demonstrates the following advantages and disadvantages:
 ## Browser Support
 
 The generated bundle works in all browsers that support [`Blob`](https://developer.mozilla.org/en/docs/Web/API/Blob). It is tested against Interenet Explorer 10, Firefox, and Chrome.
-
-The team are also working on the implementation of a workaround for Internet Explorer 9.
