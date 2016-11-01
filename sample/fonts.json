@@ -1,0 +1,23 @@
+[
+    {
+        "fontFamily": "DejaVu Sans",
+        "fontWeight": "normal",
+        "fontStyle": "normal",
+        "src": "./DejaVu/DejaVuSans.ttf"
+    },{
+        "fontFamily": "DejaVu Sans",
+        "fontWeight": "bold",
+        "fontStyle": "normal",
+        "src": "./DejaVu/DejaVuSans-Bold.ttf"
+    },{
+        "fontFamily": "DejaVu Sans",
+        "fontWeight": "normal",
+        "fontStyle": "italic",
+        "src": "./DejaVu/DejaVuSans-Oblique.ttf"
+    },{
+        "fontFamily": "DejaVu Sans",
+        "fontWeight": "bold",
+        "fontStyle": "italic",
+        "src": "./DejaVu/DejaVuSans-BoldOblique.ttf"
+    }
+]

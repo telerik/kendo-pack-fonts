@@ -1,20 +1,22 @@
 # Pack Fonts as Inline Scripts
 
-## Overview 
+## Overview
 
-Thе `kendo-pack-fonts` module packs one or more fonts into JavaScript code. In this way, you can load that code by using a `<script>` tag. 
+Thе `kendo-pack-fonts` module packs one or more fonts into JavaScript code. In this way, you can load that code by using a `<script>` tag.
 
-The packed code works:  
-* Regardless of the location you store it&mdash;this means that you do not need CORS headers.   
-* Even if the page is loaded to the `file://` URL, because you do not need an AJAX request to load the fonts into the Kendo UI PDF library.   
+The packed code works:
+* Regardless of the location you store it&mdash;this means that you do not need CORS headers.
+* Even if the page is loaded to the `file://` URL, because you do not need an AJAX request to load the fonts into the Kendo UI PDF library.
 
 ## Basic Usage
 
 The following steps demonstrate how to use the module:
 
-1. Place the `.ttf` files of your project in a directory. 
+1. Install the package by running `npm install -g @telerik/kendo-pack-fonts`
 
-2. Add a file named `fonts.json` that has contents similar to the example below.
+1. Place the `.ttf` files of your project in a directory.
+
+1. Add a file named `fonts.json` that has contents similar to the example below.
 
     ```
         [
@@ -41,28 +43,32 @@ The following steps demonstrate how to use the module:
             }
         ]
     ```
-    
-    > **Important** 
-    > * The `fontFamily` has to be the name you use in CSS for your `font-family` declarations. 
-    > * The `fontWeight` and `fontStyle` have to be either `"normal"`, `"bold"`, or`"italic"`. 
+
+    > **Important**
+    > * The `fontFamily` has to be the name you use in CSS for your `font-family` declarations.
+    > * The `fontWeight` and `fontStyle` have to be either `"normal"`, `"bold"`, or`"italic"`.
     > * The `src` is the path to the font file.
 
-3. Run the `kendo-pack-fonts` command from the directory.
+1. Run the `kendo-pack-fonts` command from the directory.
 
     cd /path/to/fonts/directory
     kendo-pack-fonts > fonts.js
 
-    The module bundles the fonts into JavaScript code and dumps it into standard output. In the example above, the code is redirected to a `fonts.js` file. 
+    The module bundles the fonts into JavaScript code and dumps it into standard output. In the example above, the code is redirected to a `fonts.js` file.
 
-4. Load the file with a script file to your page. 
+1. Load the file with a script file to your page.
 
     ```
         <head>
           ...
           <script src="fonts.js"></script>
     ```
-    
+
     While placing it in the `<head>` is not a requirement, it is strongly recommended. The script injects the `@font-face` declarations into the page with the `document.write` setup. Do not attempt to load it with RequireJS or similar tools, because it will not work.
+
+# Sample Page
+
+The `sample` folder contains a page that uses packed "DejaVu Sans" fonts. It was created using the steps described above.
 
 ## Pros and Cons
 
