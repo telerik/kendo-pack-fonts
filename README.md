@@ -4,12 +4,11 @@ Thе `kendo-pack-fonts` module packs one or more fonts into JavaScript code. In 
 
 ## Table of Contents
 
-* [Overview]
-* [Basic Usage]
-* [Sample Page]
-* [Pros and Cons]
-* [Browser Support]
-* [Contribution]
+* [Overview](#overview)
+* [Basic Usage](#basic-usage)
+* [Sample Page](#sample-page)
+* [Pros and Cons](#pros-and-cons)
+* [Browser Support](#browser-support)
 
 ## Overview
 
@@ -90,12 +89,3 @@ This approach demonstrates the following advantages and disadvantages:
 ## Browser Support
 
 The generated bundle works in all browsers that support [`Blob`](https://developer.mozilla.org/en/docs/Web/API/Blob). It is tested against Internet Explorer 10, Firefox, and Chrome.
-
-## Contribution
-
-This package is distributed under a permissive [Apache License](https://github.com/telerik/kendo-angular-messages/blob/master/LICENSE.md). We accept contributions from the public.
-
-Before you pose your suggestions, please make sure that you:
-
-1. Read and sign the [Kendo UI for Angular Contribution License Agreement (CLA)](goo.gl/forms/dXc1RaE8le6rVZ0h1). The CLA confirms that you acknowledge the legal aspects of your contributions.
-2. Submit a Pull Request.
