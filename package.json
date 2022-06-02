@@ -1,6 +1,6 @@
 {
-    "name": "@telerik/kendo-pack-fonts",
-    "version": "0.6.0",
+    "name": "@progress/kendo-pack-fonts",
+    "version": "1.0.0",
     "description": "Utility for packing fonts into inline style declarations",
     "main": "index.js",
     "bin": { "kendo-pack-fonts": "./index.js" },
