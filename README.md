@@ -21,7 +21,7 @@ The packed code works:
 
 To use the module:
 
-1. Install the package by running `npm install -g @telerik/kendo-pack-fonts`.
+1. Install the package by running `npm install -g @progress/kendo-pack-fonts`.
 
 1. Place the `.ttf` files of your project in a directory.
 
